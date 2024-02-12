@@ -1,0 +1,32 @@
+{
+  "name": "clean-post-hapi-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha -r ts-node/register test/**/*.test.ts",
+    "dev:tsc": "tsc --watch -p .",
+    "dev:serve": "nodemon --exec ts-node index.ts",
+    "dev": "run-p dev:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^21.3.3",
+    "@prisma/client": "^5.9.1",
+    "dotenv": "^16.4.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.11",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.11.16",
+    "chai": "^5.0.3",
+    "mocha": "^10.3.0",
+    "nodemon": "^3.0.3",
+    "npm-run-all": "^4.1.5",
+    "prisma": "^5.9.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
